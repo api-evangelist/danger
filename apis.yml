@@ -1,7 +1,29 @@
 aid: danger
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/danger.png
 name: Danger
-description: Danger is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Danger, Inc. was a Palo Alto, California mobile computing company founded
+  on December 9, 1999 by Andy Rubin, Joe Britt, and Matt Hershenson, all former Apple,
+  WebTV, and Philips engineers. Danger built the Danger Hiptop, sold in the United
+  States as the T-Mobile Sidekick, an early client-server ("cloud") smartphone whose
+  downloadable application catalog prefigured the app stores later shipped by Android
+  and iOS. Andy Rubin left Danger in 2003 to found Android. Microsoft acquired Danger
+  on February 11, 2008 for a price reported at roughly $500 million and folded the
+  team into "Project Pink," which shipped as the short-lived Microsoft Kin. Most former
+  Danger staff had left Microsoft by October 2009 and the company was wound down by
+  approximately 2011. Danger was surfaced in the API Evangelist network as a historic
+  Redpoint Ventures portfolio holding. It is defunct: the danger.com domain no longer
+  resolves and there is no developer portal, documentation, or API surface to catalog.'
 url: https://raw.githubusercontent.com/api-evangelist/danger/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,42 @@ x-backed-by:
 - redpoint-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-defunct:
+  founded: '1999-12-09'
+  acquired_by: Microsoft
+  acquired_date: '2008-02-11'
+  wound_down: '2011'
+  domain: danger.com
+  domain_status: NXDOMAIN
+  evidence:
+  - source: https://en.wikipedia.org/wiki/Danger_Inc.
+    kind: encyclopedia
+    note: founding, products, Microsoft acquisition, wind-down
+  - source: dig A danger.com
+    kind: dns-probe
+    note: no A record; domain does not resolve
+  note: 'Unrelated live namesakes checked and excluded: danger.co (parked GoDaddy for-sale
+    page), danger.systems (open-source Danger CI code-review bot, not VC-backed).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Defunct
+- Mobile
+- Smartphones
+- Consumer Electronics
+- Acquired
+- Redpoint Ventures
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
